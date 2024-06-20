@@ -1,0 +1,100 @@
+.homeContainer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.homeIntroContainer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0 8rem;
+  width: 70%;
+  flex-wrap: wrap-reverse;
+  gap: 0px;
+  height: calc(100% - 20rem);
+}
+.homeIntroContainer h1 {
+  margin-bottom: 0px;
+}
+.homeTextInfo {
+  flex: 1;
+}
+
+.linkButton {
+  border: 1px solid rgba(0, 0, 0, 0.45);
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: rgb(255, 196, 196);
+  color: rgb(0, 0, 0);
+  transition: transform 0.3s, background-color 0.3s;
+}
+.homePageButton {
+  font-size: 1.2rem;
+}
+
+#homePageImageContainer img{
+  max-width: 100%; 
+  height: auto;
+}
+.linkButton:active{
+  background-color: rgb(255, 159, 159);
+}
+
+.linkButton:hover {
+  transform: scale(1.1);
+}
+.homePageItemsContainer {
+  background-color: #fd5656;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  margin-top: 40px;
+  min-height: 60vh;
+}
+.featuredItems {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+.homeItemCardContainer {
+  background-color: #ffffff;
+  border-radius: 20px;
+  margin: 10px;
+  box-shadow: 0px 0px 5px black;
+  transition: transform 0.3s;
+  text-align: left;
+  padding: 10px;
+}
+.homeItemCardContainer:hover {
+  transform: scale(1.05);
+}
+.homeItemCardText {
+  padding-left: 10px;
+  margin: 0px;
+  margin-bottom: 5px;
+}
+.homeItemImg {
+  height: 200px;
+  width: 250px;
+}
+.homeItemFlavors {
+  display: flex;
+  flex-direction: row;
+}
+.homeItemCardLink {
+  text-decoration: none;
+  color: inherit;
+}
