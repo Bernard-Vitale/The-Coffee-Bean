@@ -1,0 +1,15 @@
+# Auto-detect text files and perform LF normalization
+* text=auto
+
+# Explicitly specify text files
+*.cjs text
+*.js text
+*.jsx text
+*.css text
+*.html text
+*.json text
+
+# Ensure binary files are not altered
+*.png binary
+*.jpg binary
+*.gif binary
