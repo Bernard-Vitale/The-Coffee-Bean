@@ -35,11 +35,11 @@ function App() {
       <NavBar shoppingCart={shoppingCart} />
       <div className="MainBodyContainer">
         <Routes>
-          <Route path="https://bernard-vitale.github.io/The-Coffee-Bean/" element={<HomePage coffeeData={coffeeData} loading={loading} error={error} />} />
-          <Route path="https://bernard-vitale.github.io/The-Coffee-Bean/shop" element={<ShopPage items={coffeeData} loading={loading} error={error} />} />
-          <Route path="https://bernard-vitale.github.io/The-Coffee-Bean/cart" element={<CartPage shoppingCart={shoppingCart} setShoppingCart={setShoppingCart} />}></Route>
+          <Route path="/" element={<HomePage coffeeData={coffeeData} loading={loading} error={error} />} />
+          <Route path="/shop" element={<ShopPage items={coffeeData} loading={loading} error={error} />} />
+          <Route path="/cart" element={<CartPage shoppingCart={shoppingCart} setShoppingCart={setShoppingCart} />}></Route>
           <Route
-            path="https://bernard-vitale.github.io/The-Coffee-Bean/item/:id"
+            path="/item/:id"
             element={
               <ItemPage coffeeData={coffeeData} loading={loading} error={error} shoppingCart={shoppingCart} setShoppingCart={setShoppingCart} />
             }
