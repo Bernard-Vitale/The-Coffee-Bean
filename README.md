@@ -11,3 +11,4 @@ This application was built with:
   * HTML
   * CSS
   * Vite
+  * [Fake Coffee API](https://fake-coffee-api.vercel.app/)
