@@ -8,7 +8,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  height: 3rem;
+  /* height: 3rem; */
   text-align: center;
   margin: 0px;
 }
@@ -67,27 +67,24 @@
   background-color: #ff9e9e;
   border-radius: 5px;
 }
-#navBarBtn{
+#navBarBtn, #btnDiv{
   background: none;
   border: none;
-  position: absolute;
-  top: 1.5rem;
-  right: 1rem;
+  align-self: baseline;
   display: none;    
+  margin-top: 4px;
 }
 #navBarBtnImage{
   height: clamp(1.3rem, 1vh, 2.8rem);
   margin-left: auto;
-}
-.navBarOuter{
-  display: flex;
-  background-color: #fd5656;
+
 }
 
 @media (max-width: 600px){
   #navBarLinksContainer{
       margin: 0px;
       flex-direction: column;
+      background-color: #fd5656;
       align-items: center;
       gap: 20px;
       margin-left: 0;
@@ -95,15 +92,26 @@
   }
   .navBar{
     align-items: center;
+    background-color: #fd5656;
     justify-content: center;
     flex-direction: column;
+    min-height: auto;
     gap: 0px;
   }
 
-  #navBarBtn{
+  #navBarBtn, #btnDiv{
       display: flex;
+
   }
+  .navBar li{
+    margin-left: 40px;
+  }
+  .navBar a{
+    margin-left: 40px;
+  }
+
   #navBarLinksContainer.active{
+    background-color: #fd5656;
       margin-top: 5px;
       display: flex;
       margin-left: 0px;

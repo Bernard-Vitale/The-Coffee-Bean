@@ -29,9 +29,11 @@ const NavBar = ({ shoppingCart }) => {
           <CustomLink to="/cart">Cart ({count})</CustomLink>
         </ul>
       </nav>
-      <button id="navBarBtn" onClick={toggleNav}>
-        <img src={navBarButton} alt="Expand Navigation Bar Button" id="navBarBtnImage"/>
-      </button>
+      <div id="btnDiv">
+        <button id="navBarBtn" onClick={toggleNav}>
+          <img src={navBarButton} alt="Expand Navigation Bar Button" id="navBarBtnImage"/>
+        </button>
+      </div>
     </div>
   );
 };

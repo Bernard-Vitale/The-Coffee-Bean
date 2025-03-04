@@ -6,6 +6,7 @@ const fetchCoffeeData = async () => {
     return response.data;
   } catch (error) {
     console.error("Error fetching coffee data:", error);
+    console.log(error);
     throw error;
   }
 };

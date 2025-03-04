@@ -21,13 +21,18 @@ function App() {
         const data = await fetchCoffeeData();
         setCoffeeData(data);
       } catch (error) {
-        setError(error);
+        if(error.message === 'Request failed with status code 500'){
+          setError('Sorry, The Fake Coffee API is down at the moment.')
+        }else{
+          setError(error.message);
+        }
       } finally {
         setLoading(false);
       }
     };
 
     fetchData();
+    console.log(coffeeData);
   }, []);
 
   return (
